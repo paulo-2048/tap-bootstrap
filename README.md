@@ -1,144 +1,106 @@
-# tap-bootstrap
+# Voz da Ciência | Bootstrap
 
-A minimal Bootstrap 5 webapp starter template with a clean structure and modern best practices.
+Uma aplicação web Bootstrap 5 para acessibilidade de conteúdo científico, apresentando páginas de landing, login e registro. Este projeto é parte de um webapp que transforma artigos científicos em formato de áudio para a comunidade com deficiência visual.
 
-## 📁 Project Structure
+**Engenharia de Software** | Tópicos Avançados em Programação
+
+## Estrutura do Projeto
 
 ```
 tap-bootstrap/
 ├── public/
-│   └── index.html          # Main HTML file
-├── src/
+│   ├── index.html           # Página inicial (landing)
+│   ├── login.html           # Página de login
+│   ├── register.html        # Página de registro
 │   ├── css/
-│   │   └── main.css        # Custom styles
-│   └── js/
-│       └── main.js         # Custom JavaScript
-├── package.json            # Project dependencies and scripts
-└── README.md              # This file
+│   │   ├── main.css         # Estilos da página inicial
+│   │   ├── login.css        # Estilos da página de login
+│   │   └── register.css     # Estilos da página de registro
+│   ├── js/
+│   │   ├── main.js          # Scripts da página inicial (notificações toast, rolagem suave)
+│   │   ├── login.js         # Scripts da página de login
+│   │   └── register.js      # Scripts da página de registro
+│   └── img/
+│       ├── home-1.png       # Imagem da seção hero
+│       └── ucsal/
+│           └── logo-1.png   # Logo da UCSAL
+├── package.json             # Dependências do projeto
+└── README.md                # Este arquivo
 ```
 
-## 🚀 Getting Started
+## Como Começar
 
-### Prerequisites
+### Pré-requisitos
 
-- Node.js (v14 or higher)
-- Yarn package manager
+- Node.js (v14 ou superior)
+- Gerenciador de pacotes Yarn
 
-### Installation
-
-1. Clone or download this repository
-2. Install dependencies:
+### Instalação
 
 ```bash
 yarn install
 ```
 
-### Development
+### Desenvolvimento
 
-To start the development server:
+Inicie o servidor de desenvolvimento:
 
 ```bash
 yarn start
-# or
-yarn dev
 ```
 
-This will start a local server at `http://localhost:8080` and automatically open your browser.
+Isso iniciará um servidor local em `http://localhost:8080` e abrirá automaticamente o navegador.
 
-## 🎨 Features
+## Funcionalidades
 
-- **Bootstrap 5.3.3** - Latest version via CDN
-- **Responsive Design** - Mobile-first approach
-- **Clean Structure** - Organized file structure
-- **Custom Styles** - Easy to customize CSS
-- **Modern JavaScript** - ES6+ ready
-- **Smooth Scrolling** - Built-in smooth scroll functionality
-- **Bootstrap Components** - Pre-configured tooltips and popovers
+- **Bootstrap 5.3.8** - Versão mais recente via CDN
+- **Design Responsivo** - Abordagem mobile-first
+- **Foco em Acessibilidade** - Projetado para a comunidade com deficiência visual
+- **Notificações Toast** - Sistema de notificações integrado
+- **Rolagem Suave** - Experiência de navegação aprimorada
+- **Validação de Formulários** - Formulários de login e registro
+- **Spinners de Carregamento** - Feedback visual para operações assíncronas
 
-## 📦 What's Included
+## Páginas
 
-### HTML (`public/index.html`)
+### Página Inicial (`index.html`)
 
-- Responsive navigation bar
-- Hero section with CTA buttons
-- Features section with cards
-- Footer with links
-- Bootstrap 5 integration via CDN
+- Barra de navegação com links para Login e Registro
+- Seção hero apresentando "Voz da Ciência"
+- Seção de funcionalidades destacando acessibilidade, customização e qualidade
+- Rodapé com links do site
 
-### CSS (`src/css/main.css`)
+### Página de Login (`login.html`)
 
-- Custom CSS variables
-- Hero section styling
-- Card hover effects
-- Responsive design adjustments
-- Utility classes
+- Formulário de email e senha
+- Checkbox "Salvar Login"
+- Spinner de carregamento para autenticação
+- Notificações toast para feedback
 
-### JavaScript (`src/js/main.js`)
+### Página de Registro (`register.html`)
 
-- DOM ready initialization
-- Tooltip and popover setup
-- Smooth scrolling functionality
-- Button event handlers
-- Utility functions
+- Formulário de nome, email e senha
+- Checkbox "Salvar Login"
+- Spinner de carregamento para registro
+- Notificações toast para feedback
 
-## 🛠 Customization
+## Utilitários JavaScript
 
-### Changing Colors
+O arquivo `main.js` fornece funções globais de notificação toast:
 
-Edit the CSS variables in `src/css/main.css`:
+- `showToast(message, type, delay)` - Exibe toast customizado
+- `showError(message)` - Exibe notificação de erro
+- `showWarning(message)` - Exibe notificação de aviso
+- `showSuccess(message)` - Exibe notificação de sucesso
+- `showInfo(message)` - Exibe notificação de informação
 
-```css
-:root {
-  --custom-primary: #0d6efd;
-  --custom-secondary: #6c757d;
-  /* Add your custom colors */
-}
-```
+## Scripts Disponíveis
 
-### Adding New Pages
-
-1. Create a new HTML file in the `public/` directory
-2. Link to Bootstrap and your custom CSS/JS files
-3. Update navigation links in `index.html`
-
-### Modifying Content
-
-- **Navigation**: Edit the navbar in `public/index.html`
-- **Hero Section**: Update the hero content and buttons
-- **Features**: Add or remove feature cards
-- **Footer**: Customize footer links and text
-
-## 📚 Bootstrap Resources
-
-- [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/)
-- [Bootstrap Icons](https://icons.getbootstrap.com/)
-- [Bootstrap Examples](https://getbootstrap.com/docs/5.3/examples/)
-
-## 📝 Scripts
-
-- `yarn start` - Start development server
-- `yarn dev` - Same as start
-- `yarn lint` - Run linter (configure as needed)
-- `yarn format` - Format code (configure as needed)
-
-## 🤝 Contributing
-
-Feel free to fork this project and customize it for your needs!
-
-## 📄 License
-
-MIT License - feel free to use this template for any project.
-
-## 🎯 Next Steps
-
-- [ ] Add more pages (about, contact, etc.)
-- [ ] Integrate a CSS preprocessor (Sass/Less)
-- [ ] Add a build process for production
-- [ ] Implement form validation
-- [ ] Add more interactive components
-- [ ] Set up ESLint and Prettier
-- [ ] Add unit tests
+- `yarn start` - Inicia o servidor de desenvolvimento na porta 8080
+- `yarn dev` - Mesmo que start
+- `yarn lint` - Executa o linter (placeholder)
+- `yarn format` - Formata o código (placeholder)
 
 ---
 
-**Happy Coding! 🚀**
+**Voz da Ciência - Democratizando o conhecimento científico através da acessibilidade**
