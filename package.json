@@ -1,4 +1,23 @@
 {
   "name": "tap-bootstrap",
-  "packageManager": "yarn@4.10.3"
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Landing, register and login page for 'Voz da Ciência'",
+  "packageManager": "yarn@4.10.3",
+  "scripts": {
+    "start": "npx http-server public -p 8080 -o",
+    "dev": "npx http-server public -p 8080 -o",
+    "lint": "echo 'Add your linter here'",
+    "format": "echo 'Add your formatter here'"
+  },
+  "keywords": [
+    "bootstrap",
+    "webapp",
+    "starter"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
 }

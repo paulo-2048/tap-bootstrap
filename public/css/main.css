@@ -1,0 +1,71 @@
+/* Custom styles for Bootstrap Webapp */
+
+/* General Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+  margin-bottom: 1.5rem;
+}
+
+.hero .lead {
+  margin-bottom: 2rem;
+}
+
+/* Features Section */
+.features {
+  background-color: #fff;
+}
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+}
+
+footer a:hover {
+  text-decoration: underline !important;
+}
+
+/* Utility Classes */
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+/* Toast customization */
+.toast-container {
+  z-index: 9999 !important;
+}
+
+.toast {
+  min-width: 300px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}
+
+.toast .btn-close-white {
+  filter: brightness(1) invert(0);
+}
+
+.toast.bg-warning .btn-close {
+  filter: brightness(0) invert(0);
+}

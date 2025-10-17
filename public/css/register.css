@@ -1,0 +1,15 @@
+/* Import main stylesheet */
+@import url("main.css");
+
+/* Campos de nome, email e senha */
+
+#inputName:focus,
+#inputEmail:focus,
+#inputPassword:focus {
+  border: 1px solid #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+  outline: none;
+  font-weight: 500;
+  transform: scale(1.02);
+  transition: all 0.8s ease;
+}

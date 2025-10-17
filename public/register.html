@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="./img/ucsal/logo-1.png" />
+
+    <title>Login</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom styles for this template -->
+    <link href="./css/register.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <form class="form" id="form-signin">
+      <div class="text-center mb-4 mt-5">
+        <a href="index">
+          <img class="mb-4 img-fluid" src="./img/ucsal/logo-1.png" alt="" />
+        </a>
+        <h1 class="h3 mb-3 font-weight-normal">Registro</h1>
+        <p class="mx-5">
+          Faça registro com seu email e senha para acessar o sistema.
+        </p>
+      </div>
+
+      <div class="forms mx-4">
+        <div class="form-label-group mb-4">
+          <label for="inputName">Nome</label>
+          <input
+            type="text"
+            id="inputName"
+            class="form-control"
+            placeholder="Jonh Doe"
+            required
+            autofocus
+          />
+        </div>
+
+        <div class="form-label-group mb-4">
+          <label for="inputEmail">Email</label>
+          <input
+            type="email"
+            id="inputEmail"
+            class="form-control"
+            placeholder="jonh.doe@ucsal.edu.br"
+            required
+            autofocus
+          />
+        </div>
+
+        <div class="form-label-group mb-4">
+          <label for="inputPassword">Password</label>
+          <input
+            type="password"
+            id="inputPassword"
+            class="form-control"
+            placeholder="********"
+            required
+          />
+        </div>
+
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me" /> Salvar Login
+          </label>
+        </div>
+        <div
+          class="button-container h-full d-flex justify-content-center align-items-center"
+        >
+          <button class="btn btn-lg btn-primary btn-block" type="submit">
+            Sign in
+          </button>
+        </div>
+      </div>
+      <p class="mt-5 mb-3 text-muted text-center">&copy; Voz da Ciência</p>
+    </form>
+
+    <div
+      class="spinner-full-page position-fixed top-0 start-0 bg-dark bg-opacity-50 w-100 h-100 d-none"
+      id="spinner"
+      aria-hidden="true"
+    >
+      <div
+        class="text-center top-50 start-50 translate-middle position-absolute"
+        id="loading"
+        role="status"
+        aria-live="polite"
+      >
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div
+      id="toast-container"
+      class="toast-container position-fixed top-0 end-0 p-3"
+      style="z-index: 9999"
+      aria-live="polite"
+      aria-atomic="true"
+    ></div>
+
+    <script src="./js/register.js"></script>
+  </body>
+</html>
